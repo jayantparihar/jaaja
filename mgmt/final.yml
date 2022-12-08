@@ -1,0 +1,15 @@
+--- 
+- host : webserver
+  roles: 
+    - name: python3
+      python3_pyenv : "3.8.5"
+      var: 
+      application_user: jayant
+      application_path: /home/jayant/application
+      application_port: 12345
+      
+    loop:
+    - user: jayant
+      path: home/jayant
+
+          
